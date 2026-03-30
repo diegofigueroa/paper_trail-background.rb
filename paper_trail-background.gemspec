@@ -14,7 +14,8 @@ Gem::Specification.new do |spec|
   spec.files = Dir[File.join("lib", "**", "*"), "LICENSE", "README.md", "Rakefile"]
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "ar_after_transaction", "~> 0.13.0"
-  spec.add_runtime_dependency "paper_trail", ">= 10"
+  spec.add_dependency "activerecord", ">= 7.2", "< 8.2"
+  spec.add_dependency "ar_after_transaction", "~> 1.1.0"
+  spec.add_dependency "paper_trail", ">= 12"
   spec.metadata["rubygems_mfa_required"] = "true"
 end
